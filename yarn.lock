@@ -276,7 +276,6 @@
     "getenv" "^1.0.0"
     "html-loader" "~1.1.0"
     "html-webpack-plugin" "~4.3.0"
-    "image-size" "^1.0.0"
     "is-wsl" "^2.0.0"
     "loader-utils" "^2.0.0"
     "mini-css-extract-plugin" "^0.5.0"
@@ -1050,7 +1049,7 @@
     "pify" "^4.0.1"
     "schema-utils" "^2.6.5"
 
-"babel-plugin-styled-components@>= 1.12.0":
+"babel-plugin-styled-components@^2.0.7", "babel-plugin-styled-components@>= 1.12.0":
   "integrity" "sha512-i7YhvPgVqRKfoQ66toiZ06jPNA3p6ierpfUuEWxNF+fV27Uv5gxBkf8KZLHUCc1nFA9j6+80pYoIpqCeyW3/bA=="
   "resolved" "https://registry.npmjs.org/babel-plugin-styled-components/-/babel-plugin-styled-components-2.0.7.tgz"
   "version" "2.0.7"
@@ -3681,13 +3680,6 @@
   "resolved" "https://registry.npmjs.org/ignore/-/ignore-5.2.0.tgz"
   "version" "5.2.0"
 
-"image-size@^1.0.0":
-  "integrity" "sha512-xfOoWjceHntRb3qFCrh5ZFORYH8XCdYpASltMhZ/Q0KZiOwjdE/Yl2QCiWdwD+lygV5bMCvauzgu5PxBX/Yerg=="
-  "resolved" "https://registry.npmjs.org/image-size/-/image-size-1.0.2.tgz"
-  "version" "1.0.2"
-  dependencies:
-    "queue" "6.0.2"
-
 "immer@8.0.1":
   "integrity" "sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA=="
   "resolved" "https://registry.npmjs.org/immer/-/immer-8.0.1.tgz"
@@ -5891,13 +5883,6 @@
   "integrity" "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A=="
   "resolved" "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   "version" "1.2.3"
-
-"queue@6.0.2":
-  "integrity" "sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA=="
-  "resolved" "https://registry.npmjs.org/queue/-/queue-6.0.2.tgz"
-  "version" "6.0.2"
-  dependencies:
-    "inherits" "~2.0.3"
 
 "randombytes@^2.0.0", "randombytes@^2.0.1", "randombytes@^2.0.5", "randombytes@^2.1.0":
   "integrity" "sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ=="
