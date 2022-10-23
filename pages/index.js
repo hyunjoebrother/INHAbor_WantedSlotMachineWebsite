@@ -1,13 +1,18 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
+import Head from "next/head";
+import Link from "next/link";
+
 import Layout from "../components/Layout";
 import Margin from "../components/Margin";
 import Modal from "../components/Modal";
-import Head from "next/head";
 import Text from "../components/Text";
+
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+import Flip from "react-reveal/Flip";
+import Tada from "react-reveal/Tada";
 
 import Image from "next/image";
 import ImageTitle from "../public/wanted.png";
@@ -16,11 +21,15 @@ import ImageOldImg from "../public/oldpaper_bg.png";
 import ImageInhaTitle from "../public/inha_title.png";
 import ImageInhaDate from "../public/inha_date.png";
 import ImageInhaClue from "../public/inhaclue_main.png";
+import ImageWantedLogo from "../public/wanted_logo.png";
+import ImageIhaborText from "../public/inhabor_text.png";
+import Image1stResult from "../public/1st_result.png";
+import ImageInhaborLogo from "../public/inhabor_logo.png";
 
 const BackGround = styled.div`
   top: 0;
   width: 100%;
-  height: 2000px;
+  height: 3400px;
   text-align: center;
   margin: auto;
   background-color: #000;
@@ -57,17 +66,38 @@ const StyledInhaDate = styled(Image)`
 `;
 
 const StyledInhaClue = styled(Image)`
-  width: 120%;
-  height: 120%;
+  animation-duration: 2s;
+`;
+
+const StyledWantedLogo = styled(Image)`
+  width: 40%;
+  height: 40%;
+`;
+
+const StyledInhaborText = styled(Image)`
+  width: 100%;
+  height: 100%;
+`;
+
+const Styled1stResult = styled(Image)`
+  weight: 100%;
+  height: 100%;
+`;
+
+const StyledInhaborLogo = styled(Image)`
+  weight: 60%;
+  height: 60%;
 `;
 
 const StyledText = styled(Text)`
   color: ${(props) => props.color};
-  font-size: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
   font-weight: 400;
   margin: auto;
   text-align: center;
-  line-height: 2;
+  line-height: 1.6;
 `;
 
 export default function Start() {
@@ -106,10 +136,50 @@ export default function Start() {
           <StyledInhaDate src={ImageInhaDate} />
         </Slide>
 
-        <Margin size="48" />
+        <Margin size="120" />
+
+        <Flip top>
+          <StyledWantedLogo src={ImageWantedLogo} width={160} height={160} />
+          <StyledInhaborText src={ImageIhaborText} />
+        </Flip>
+
+        <Margin size="160" />
+
         <Fade bottom>
-          <StyledInhaClue src={ImageInhaClue} />
+          <Link href="/select">
+            <StyledInhaClue src={ImageInhaClue} />
+          </Link>
+          <StyledText>
+            상단 사진을 눌러서
+            <br /> 2학기 여론조사 문항에 대한 단서 찾아보기
+          </StyledText>
         </Fade>
+
+        <Margin size="160" />
+        <Tada>
+          <Link href="https://www.instagram.com/p/Ce53N9dpS8h/?utm_source=ig_web_copy_link">
+            <Styled1stResult src={Image1stResult} />
+          </Link>
+        </Tada>
+
+        <Margin size="40" />
+
+        <StyledText>
+          상단 사진을 눌러서
+          <br /> 1학기 인하대학교 여론조사 결과 확인하기
+        </StyledText>
+
+        <Margin size="88" />
+
+        <Tada>
+          <Link href="https://www.instagram.com/inhabor_13/">
+            <StyledInhaborLogo
+              src={ImageInhaborLogo}
+              width={100}
+              height={100}
+            />
+          </Link>
+        </Tada>
       </BackGround>
     </>
   );
