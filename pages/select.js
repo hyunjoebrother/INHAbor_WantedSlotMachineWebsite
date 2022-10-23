@@ -34,7 +34,7 @@ import Carousel from "nuka-carousel";
 const BackGround = styled.div`
   top: 0;
   width: 100%;
-  height: 2000px;
+  height: 1400px;
   text-align: center;
   margin: auto;
   background-color: #000;
@@ -123,14 +123,14 @@ export default function Start() {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://inhabor-wanted.pages.dev/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="인하대학교 여론조사" />
         <meta
           property="og:description"
           content="WANTED! 찾습니다. 그리고 원합니다. 개발자 : 인하대학교 총대의원회 집행국 선전편집국 국장 김현조 (Mei)"
         />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="/public/og_poster.png" />
       </Head>
 
       <BackGround>
@@ -145,16 +145,16 @@ export default function Start() {
 
         <div>
           <Carousel wrapAround={true} slidesToShow={3}>
-            <StyledClueImg1 src={ImageClue1} width={320} height={320} />
-            <StyledClueImg2 src={ImageClue2} width={320} height={320} />
-            <StyledClueImg3 src={ImageClue3} width={320} height={320} />
-            <StyledClueImg4 src={ImageClue4} width={320} height={320} />
-            <StyledClueImg5 src={ImageClue5} width={320} height={320} />
-            <StyledClueImg6 src={ImageClue6} width={320} height={320} />
-            <StyledClueImg7 src={ImageClue7} width={320} height={320} />
-            <StyledClueImg8 src={ImageClue8} width={320} height={320} />
-            <StyledClueImg9 src={ImageClue9} width={320} height={320} />
-            <StyledClueImg10 src={ImageClue10} width={320} height={320} />
+            <StyledClueImg1 src={ImageClue1} width={320} height={380} />
+            <StyledClueImg2 src={ImageClue2} width={320} height={380} />
+            <StyledClueImg3 src={ImageClue3} width={320} height={380} />
+            <StyledClueImg4 src={ImageClue4} width={320} height={380} />
+            <StyledClueImg5 src={ImageClue5} width={320} height={380} />
+            <StyledClueImg6 src={ImageClue6} width={320} height={380} />
+            <StyledClueImg7 src={ImageClue7} width={320} height={380} />
+            <StyledClueImg8 src={ImageClue8} width={320} height={380} />
+            <StyledClueImg9 src={ImageClue9} width={320} height={380} />
+            <StyledClueImg10 src={ImageClue10} width={320} height={380} />
           </Carousel>
         </div>
         <Margin size="80" />

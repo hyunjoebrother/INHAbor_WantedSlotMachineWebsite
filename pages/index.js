@@ -29,7 +29,7 @@ import ImageInhaborLogo from "../public/inhabor_logo.png";
 const BackGround = styled.div`
   top: 0;
   width: 100%;
-  height: 3400px;
+  height: 2600px;
   text-align: center;
   margin: auto;
   background-color: #000;
@@ -91,7 +91,7 @@ const StyledInhaborLogo = styled(Image)`
 
 const StyledText = styled(Text)`
   color: ${(props) => props.color};
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   color: #fff;
   font-weight: 400;
@@ -105,14 +105,14 @@ export default function Start() {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://inhabor-wanted.pages.dev/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="인하대학교 여론조사" />
         <meta
           property="og:description"
           content="WANTED! 찾습니다. 그리고 원합니다. 개발자 : 인하대학교 총대의원회 집행국 선전편집국 국장 김현조 (Mei)"
         />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="/public/og_poster.png" />
       </Head>
 
       <BackGround>
