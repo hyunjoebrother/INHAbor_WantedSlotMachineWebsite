@@ -9,12 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^7.6.1",
+    "jquery": "^3.6.1",
     "jquery-slotmachine": "^5.0.0",
     "next": "12.3.1",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^9.1.0",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-reveal": "^1.2.2",
+    "styled-components": "^5.3.6",
+    "terser-webpack-plugin": "^5.3.6",
+    "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
+    "@expo/webpack-config": "^0.17.2",
     "eslint": "8.26.0",
     "eslint-config-next": "12.3.1"
   }
