@@ -5,7 +5,7 @@
 // };
 
 // module.exports = nextConfig;
-moduel.exports = {
+module.exports = {
   images: {
     loader: "akamai",
     path: "/",
