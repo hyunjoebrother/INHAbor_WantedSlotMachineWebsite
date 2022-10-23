@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
+    "dev": "next",
+    "build": "next build",
+    "netlify-deploy": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@expo/webpack-config": "^0.17.2",
+    "babel-eslint": "^10.1.0",
     "eslint": "8.26.0",
     "eslint-config-next": "12.3.1"
   }
